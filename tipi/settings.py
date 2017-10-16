@@ -25,7 +25,7 @@ SECRET_KEY = 'uytpgni23!_-w0)_9^#hxzdjr4)lda9ob(8a$^hr)5qsv%tx^o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','avinash321.pythonanywhere.com']
 
 
 # Application definition
@@ -76,10 +76,8 @@ WSGI_APPLICATION = 'tipi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE' : 'django_mongodb_engine',
-        'NAME' : 'tipi'
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
